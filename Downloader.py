@@ -72,6 +72,5 @@ for i in range(len(Study_divs)):
     Combinedframe = pd.concat([df.set_axis(parser._maybe_dedup_names(df.columns), axis=1) for df in [Combinedframe, MetaData_df]], ignore_index=True)
     logf.write("File {0} finished at: {1}\n".format(Study_id, str(datetime.now())))
     print("File {0} finished at: {1}\n".format(Study_id, str(datetime.now())))
-    break
 
 Combinedframe.to_csv('Combined_IReceptor_Stats.csv', index=None, header=True)
