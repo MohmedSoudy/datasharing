@@ -1,4 +1,4 @@
-amino_acid,codon,relative_freqTency
+amino_acid,codon,relative_frequency
 *,TAA,0.74
 *,TAG,0.15
 *,TGA,0.11
