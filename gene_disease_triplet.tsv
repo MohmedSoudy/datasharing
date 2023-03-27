@@ -1,4 +1,4 @@
-"Disease"	"Association_Type"	"Gene"
+Disease   Association_Type  Gene
 "Post-Traumatic Stress Disorder"	"Biomarker"	"FLT4"
 "Post-Traumatic Stress Disorder"	"Biomarker"	"IL6"
 "Post-Traumatic Stress Disorder"	"AlteredExpression"	"TNF"
