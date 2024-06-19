@@ -1,4 +1,3 @@
-cd /home/aranjan/webapp/
 docker-compose build && docker-compose up
 touch docker.txt
 docker ps >> docker.txt
@@ -11,6 +10,8 @@ do
 	fi
 done < "$input"
 rm docker.txt
-c="/home/aranjan/webapp/db/dev10.0_huri.sql"
+c="/home/aranjan/webapp/db/init_new.sql"
 sudo docker cp  "$c" "$b":/
 docker exec -it "$b" /bin/bash
+mysql -uroot --password=secret
+source /db/init_new.sql
